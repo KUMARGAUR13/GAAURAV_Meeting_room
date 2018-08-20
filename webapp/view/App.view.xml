@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="sap.myapp.controller.App"
+    displayBlock = "true"
+    xmlns:mvc = "sap.ui.core.mvc"
+    xmlns = "sap.m">
+	<App>
+		<pages> 
+			<Page title="{i18n>homePageTitle}"> 
+				<content> 
+            		<mvc:XMLView viewName="sap.myapp.view.HelloPanel"/>
+				</content> 
+			</Page> 
+		</pages>
+	</App>
+	
+	<!--<Button 
+		text="{i18n>showHelloButtonText}"
+		press="onShowHello"/>
+	
+	<Input 
+		value="{/recipient/name}" 
+		description="Hello {/recipient/name}" 
+		valueLiveUpdate="true" 
+		width="60%"/>
+	
+	<Text text="Hello World"/>
+	<Carousel>
+		<pages>
+			<Image src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Coronelli_globe_celeste.jpg/675px-Coronelli_globe_celeste.jpg" alt = "Images/globe.jpg" height ="400px" />
+			<Image src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Coronelli_globe_celeste.jpg/675px-Coronelli_globe_celeste.jpg" alt = "Images/globe.jpg" height ="400px" />
+			
+		</pages>
+	</Carousel>-->
+	
+	
+</mvc:View>
