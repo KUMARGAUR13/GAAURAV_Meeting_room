@@ -35,6 +35,8 @@ sap.ui.define([
 				MessageToast.show(sMsg);
 			},
 			onOpenDialog : function () {
+				this.getOwnerComponent().openHelloDialog();
+				/* This is now moved to helloDialog
 				var oView = this.getView();
 				var oDialog = oView.byId("helloDialog"); // create dialog lazily 
 				if (!oDialog) { 
@@ -47,7 +49,7 @@ sap.ui.define([
 				
 			},
 			onCloseDialog : function () { 
-				this.getView().byId("helloDialog").close(); 
+				this.getView().byId("helloDialog").close(); */
 				
 			}
 		});

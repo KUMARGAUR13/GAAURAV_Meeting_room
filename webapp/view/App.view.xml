@@ -5,7 +5,13 @@
     xmlns = "sap.m">
 	<App>
 		<pages> 
-			<Page title="{i18n>homePageTitle}"> 
+			<Page title="{i18n>homePageTitle}">
+				<headerContent>
+					<Button
+					    text = "{i18n>dialogHello}"
+						icon="sap-icon://hello-world" 
+						press="onOpenDialog"/>
+				</headerContent> 
 				<content> 
             		<mvc:XMLView viewName="sap.myapp.view.HelloPanel"/>
 				</content> 
